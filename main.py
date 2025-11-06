@@ -66,7 +66,8 @@ if __name__ == "__main__":
                         for spot in row:
                             spot.update_neighbors(grid.grid)
                     started = True
-                    astar(lambda: grid.draw(), grid, start, end)
+                    ucs(lambda: grid.draw(), grid, start, end)
+                    #dfs(lambda: grid.draw(), grid, start, end, 5)
                 #     # here you can call the algorithms
                 # if event.key == pygame.K_a and not started:
                 #     for row in grid.grid:
